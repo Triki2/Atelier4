@@ -1,0 +1,30 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">UserId</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of todolist" >
+        <td>{{t.userId}}</td>
+        <td>{{t.id}}</td>
+        <td>{{t.title}}</td>
+        <td>{{t.completed}}</td>
+          
+     
+      </tr>
+    </tbody>
+  </table>
+ 
+  
+    <button class="btn btn-success"  type ="submit" (click)="getNB()"  >Bilan</button>
+    <h3>{{message}}</h3>
+  
+ 
+
+ <br>
+  
